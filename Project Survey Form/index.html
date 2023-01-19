@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Testing Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div >
+    <h1 id="title">Product Testing Survey</h1>
+    <p id="description">
+      Thank you for taking time to provide feedback. We appreciate hearing from you and will review your comments carefully.
+    </p>
+    </div>
+    <div class="form-control">
+    <form id="survey-form">
+      <!-- Name and email input -->
+      <div class="form-control">
+      <label for="name" id="name-label" 
+        >Name
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          placeholder="Enter full name"
+        />
+      </label>
+      <label for="email" id="email-label"
+        >email
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          placeholder="Enter email"
+        />
+      </label>
+    </div>
+
+    <div class="form-control">
+
+      <!-- Number input -->
+      <label for="price" id="number-label"
+      >How much would you pay for this product?
+      <input
+      id="number"
+      type="number"
+      min="10"
+      max="1000"
+      required
+      name="price"
+      placeholder="$ Price"
+      /></label>
+      
+    </div>
+
+    <div class="form-control">
+
+      <!-- Dropdown -->
+      <select id="dropdown" name="dropdown">
+        <option>Select the product for review</option>
+        <option>Product A</option>
+        <option>Product B</option>
+        <option>Product C</option>
+        <option>Product D</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+
+      <!-- Radio Buttons - recommend product -->
+      <fieldset>
+        <legend>Would you recommend it to your friends and colleagues?</legend>
+        <label for="yes"
+        ><input
+        id="yes"
+        type="radio"
+        name="option"
+        value="yes"
+        checked
+        />Yes</label
+        >
+        <label for="no"
+        ><input
+        id="no"
+        type="radio"
+        name="option"
+        value="no"
+        />No</label
+        >
+      </fieldset>
+    </div>
+      
+    <div class="form-control">
+
+      <!-- Checkboxes - favorite features -->
+      <fieldset>
+        <legend>What are your favorite features?</legend>
+        <label>
+            <input type="checkbox" name="option" value="option1" checked>Feature 1
+        </label>
+        <label>
+            <input type="checkbox" name="option" value="option2">Feature 2
+        </label>
+        <label>
+          <input type="checkbox" name="option" value="option3">Feature 3
+        </label>
+        <label>
+            <input type="checkbox" name="option" value="option4">Feature 4
+          </label>
+        <label>
+          <input type="checkbox" name="option" value="option5">Feature 5
+        </label>
+        <label>
+          <input type="checkbox" name="option" value="option6">Feature 6
+        </label>
+      </fieldset>
+    </div>
+
+    <div class="form-control">
+
+      <!-- Textarea -->
+      <label for="textarea"
+        >Do you have any suggestions/comments to make this product better?
+        <textarea
+        id="textarea"
+          name="textarea"
+          placeholder="Enter text here"
+          ></textarea>
+        </label>
+      </div>
+
+      <div class="form-control">
+
+        <!-- Submit Button -->
+        <input type="submit" id="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+  </body>
+</html>
